@@ -13,7 +13,7 @@ export default function Detail(){
   useEffect(()=>{
     console.log(id);
     async function getspecifictodo(){
-      let response=await fetch(`http://localhost:5000/api/todo/gettodo/${id}`);
+      let response=await fetch(`https://mern-todo-wmhj.onrender.com/api/todo/gettodo/${id}`);
       let data=await response.json();
       setspecifictodo(data);
     }

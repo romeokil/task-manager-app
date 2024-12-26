@@ -11,7 +11,7 @@ export default function EditTodo(){
     const {isDarkMode}=useTheme();
     useEffect(()=>{
         async function edittodo(){
-            let response=await fetch(`http://localhost:5000/api/todo/gettodo/${id}`);
+            let response=await fetch(`https://mern-todo-wmhj.onrender.com/api/todo/gettodo/${id}`);
             if(response.ok){
                 let data=await response.json();
                 settitle(data.title);
@@ -27,7 +27,7 @@ export default function EditTodo(){
     
     async function updateHandler(ev){
         ev.preventDefault();
-        let response=await fetch(`http://localhost:5000/api/todo/updatetodo/${id}`,{
+        let response=await fetch(`https://mern-todo-wmhj.onrender.com/api/todo/updatetodo/${id}`,{
             method:'PUT',
             body:JSON.stringify({title,description}),
             'headers':

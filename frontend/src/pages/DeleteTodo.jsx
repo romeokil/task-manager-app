@@ -6,7 +6,7 @@ export default function DeleteTodo(){
     const Navigate=useNavigate();
     useEffect(()=>{
         async function deletetask(){
-            let response = await fetch(`http://localhost:5000/api/todo/deletetodo/${id}`,{
+            let response = await fetch(`https://mern-todo-wmhj.onrender.com/api/todo/deletetodo/${id}`,{
                 method:'DELETE',
                 headers:{
                     'Content-Type':'Application/JSON'

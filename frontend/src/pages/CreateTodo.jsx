@@ -12,7 +12,7 @@ export default function CreatTodo(){
         ev.preventDefault();
         console.log(title);
         console.log(description);
-        let response=await fetch('http://localhost:5000/api/todo/createtodo',{
+        let response=await fetch('https://mern-todo-wmhj.onrender.com/api/todo/createtodo',{
             method:'POST',
             body:JSON.stringify({title,description}),
             headers:{

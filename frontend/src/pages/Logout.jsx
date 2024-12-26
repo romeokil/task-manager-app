@@ -5,7 +5,7 @@ export default function Logout(){
     const Navigate=useNavigate();
     useEffect(()=>{
         async function logout(){
-            let response=await fetch('http://localhost:5000/api/auth/logout',{
+            let response=await fetch('https://mern-todo-wmhj.onrender.com/api/auth/logout',{
                 method:'POST',
                 header:{
                     'Content-Type':'Application/JSON'

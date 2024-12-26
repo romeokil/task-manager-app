@@ -10,7 +10,7 @@ const dotenv=require('dotenv');
 dotenv.config();
 const PORT=process.env.PORT || 5000;
 const cur_dirname=path.resolve();
-app.use(cors({credentials:true,origin:'http://localhost:5173'}))
+app.use(cors({credentials:true,origin:'https://mern-todo-wmhj.onrender.com'}))
 app.use(express.json());
 app.use(cookieParser());
 app.use('/api/auth',Authroutes);
