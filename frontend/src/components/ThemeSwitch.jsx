@@ -23,7 +23,7 @@ const ThemeSwitch = () => {
           />
         </span>
       </label>
-      <p className="text-lg text-slate-400">{isDarkMode ? 'Dark Mode' : 'Light Mode'}</p>
+      <p className="text-sm lg:text-xl text-slate-400">{isDarkMode ? 'Dark Mode' : 'Light Mode'}</p>
     </div>
   );
 };
