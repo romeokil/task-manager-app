@@ -18,7 +18,7 @@ export default function IndexPage(){
        
         <>
             <Header/>
-            <div className={`${isDarkMode?'bg-slate-900':''} w-full h-full`}>
+            <div className={`${isDarkMode?'bg-slate-900':''} w-full h-screen`}>
                 <Template todos={todos}/>
             </div>
             
