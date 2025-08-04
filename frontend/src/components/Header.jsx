@@ -13,7 +13,7 @@ export default function Header(){
     // /profie backend route ko fetch call maaro pata chal jaega user hai ki ni.
     useEffect(()=>{
         async function main(){
-            let response=await fetch('https://mern-todo-wmhj.onrender.com/api/auth/profile',{
+            let response=await fetch('http://localhost:8000/api/auth/profile',{
                 method:'GET',
                 headers:
                 {
@@ -29,7 +29,7 @@ export default function Header(){
     },[setuserInfo])
 
     async function logout(){
-        let response=await fetch('https://mern-todo-wmhj.onrender.com/api/auth/logout',{
+        let response=await fetch('http://localhost:8000/api/auth/logout',{
                method:'POST',
                credentials:'include' 
         })

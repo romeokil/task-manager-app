@@ -18,7 +18,7 @@ export default function Login(){
         e.preventDefault();
         console.log(username);
         console.log(password);
-        let response=await fetch('https://mern-todo-wmhj.onrender.com/api/auth/login',{
+        let response=await fetch('http://localhost:8000/api/auth/login',{
             method:'POST',
             body:JSON.stringify({username,password}),
             headers:

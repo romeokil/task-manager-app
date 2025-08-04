@@ -13,7 +13,7 @@ export default function Mytodo(){
     const {isDarkMode}=useTheme();
     useEffect(()=>{
         async function gettodo(){
-            let response=await fetch(`https://mern-todo-wmhj.onrender.com/api/todo/getalltodoforid/${id}`);
+            let response=await fetch(`http://localhost:8000/api/todo/getalltodoforid/${id}`);
             if(response.ok){
                 let data=await response.json();
                 setuserTodo(data);

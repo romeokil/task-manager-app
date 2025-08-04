@@ -7,7 +7,7 @@ export default function IndexPage(){
     const {isDarkMode}=useTheme();
         useEffect(()=>{
             async function gettodo(){
-                let response=await fetch('https://mern-todo-wmhj.onrender.com/api/todo/getalltodo');
+                let response=await fetch('http://localhost:8000/api/todo/getalltodo');
                 let data=await response.json();
                 console.log(data);
                 settodos(data);

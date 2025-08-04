@@ -15,7 +15,7 @@ export default function Register(){
         e.preventDefault();
         console.log(username);
         console.log(password);
-        let response=await fetch('https://mern-todo-wmhj.onrender.com/api/auth/register',{
+        let response=await fetch('http://localhost:8000/api/auth/register',{
             method:'POST',
             body:JSON.stringify({username,password}),
             headers:
