@@ -1,1 +1,3 @@
 we will try to dockerise our application
+we have finally dockerised our frontend React-app and backend Node-app dockerised you can start the container stop the container you can see the images in the Docker desktop and also you can  pull the images of the frontend and backend application we already pushed it to dockerhub , once you signed in dockerhub go to repositories you can see mernapp-frontend mernapp-backend images from dockerhub.
+Cool bhai maza aa gy kuch toh acha kiye hm. Bilkul beta keeep motivated , Sr niche or bs kaam , u willl do great....
